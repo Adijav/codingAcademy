@@ -1,0 +1,13 @@
+<div class="panel panel-default courseDetails">
+  <div class="panel-heading">
+    <h3 class="panel-title text-center">New Courses</h3>
+  </div>
+  <div class="panel-body">
+  	<div class="row">
+	  	<div class="text-center" ng-repeat="course in courses">
+	  		<div class="text-right col-md-6">{{course.publishedDate}}</div>
+	  		<div class="text-left col-md-6">{{course.name}}</div>
+	  	</div>
+  	</div>
+  </div>
+</div>

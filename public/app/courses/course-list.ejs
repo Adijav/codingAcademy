@@ -1,0 +1,20 @@
+<div class="row ">
+	<div class="col-lg-8 col-lg-offset-2 table-responsive">
+		<table class="table-condensed table table-striped well well-sm">
+			<thead>
+				<tr class="active">
+					<th>#</th>
+					<th>Title</th>
+					<th>Pubished Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="course in courses">
+					<td>{{$index+1}}</td>
+					<td><a ng-click="notifyUser(signedInUser.isAuthenticated())" ng-attr-target="{{target}}" href="{{signedInUser.isAuthenticated() ? course.url : ''}}">{{course.title}}</a></td>
+					<td>{{course.publishedDate | date}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
