@@ -8,12 +8,15 @@
   },
   "engines": {
     "node": "4.2.x",
-    "npm": "2.14.x",
-    "bower": "1.7.x"
+    "npm": "2.14.x"
+  },
+  "scripts": {
+    "postinstall": "bower cache clean && bower install"
   },
   "author": "Aditya J",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.7.9",
     "body-parser": "^1.15.2",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.4.2",
